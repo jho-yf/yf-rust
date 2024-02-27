@@ -1,0 +1,10 @@
+workspace = { members = ["rs003_hello_cargo_lib"] }
+[package]
+name = "rs002_hello_cargo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
