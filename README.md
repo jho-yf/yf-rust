@@ -77,4 +77,37 @@ authors = ["author_name"]
 
 ### 第三方库crate
 
-- https://crates.io/
+> https://crates.io/
+
+添加依赖
+
+```toml
+[dependencies]
+crate_name = "0.1.0"
+```
+
+#### 使用cargo-edit安装依赖库
+
+```shell
+# 安装cargo-edit
+cargo install cargo-edit
+
+# 添加依赖库
+cargo add dependency_name
+# 添加指定版本依赖库
+cargo add dependency_name@0.1.0
+# 添加开发时用的依赖库
+cargo add --dev dependency_name
+# 添加构建时用的依赖库
+cargo add --build dependency_name
+
+# 删除库
+cargo rm dependency_name
+```
+
+#### 设置国内源
+
+> https://rsproxy.cn/
+
+设置`~/.cargo/config`
+
