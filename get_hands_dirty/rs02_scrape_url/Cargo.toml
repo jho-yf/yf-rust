@@ -1,0 +1,10 @@
+[package]
+name = "rs02_scrape_url"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# reqwest Http客户端
+reqwest = { version = "0.12.4", features = ["blocking"]}
+# html2md html转markdown的工具包
+html2md = "0.2"
