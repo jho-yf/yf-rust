@@ -10,6 +10,7 @@
 
 // 枚举类型
 #[derive(Debug)]
+#[allow(dead_code)]
 enum Gender {
     Unspecified = 0,
     Male = 1,
@@ -19,13 +20,16 @@ enum Gender {
 // struct的特殊形式：元组结构体
 // 它的域都是匿名的，可以使用索引访问，常用于构造简单的结构体
 #[derive(Debug, Copy, Clone)]
+#[allow(dead_code)]
 struct UserId(u64);
 
 #[derive(Debug, Copy, Clone)]
+#[allow(dead_code)]
 struct TopicId(u64);
 
 // 标准结构体，可以把任何类型组合在结构体中使用
 #[derive(Debug)]
+#[allow(dead_code)]
 struct User {
     id: UserId,
     name: String,
@@ -33,6 +37,7 @@ struct User {
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 struct Topic {
     id: TopicId,
     title: String,
@@ -44,6 +49,7 @@ struct Topic {
 // Leave: 用户离开聊天室
 // Message: 用户发送消息
 #[derive(Debug)]
+#[allow(dead_code)]
 enum Event {
     Join((UserId, TopicId)),
     Leave((UserId, TopicId)),
@@ -51,5 +57,26 @@ enum Event {
 }
 
 fn main() {
-    println!("Hello, world!");
+    let tom = User {
+        id: UserId(1),
+        name: "Tom".into(),
+        gender: Gender::Male,
+    };
+    let alice = User {
+        id: UserId(2),
+        name: "Alice".into(),
+        gender: Gender::Female,
+    };
+
+    let rust_topic = Topic {
+        id: TopicId(1),
+        title: "Rust".into(),
+        owner: UserId(1)
+    };
+
+    let event1 = Event::Join((tom.id, rust_topic.id));
+    let event2 = Event::Join((alice.id, rust_topic.id));
+    let event3 = Event::Message((tom.id, rust_topic.id, "Hello, Alice!".into()));
+
+    println!("event1: {:?}, event2: {:?}, event3: {:?}", event1, event2, event3);
 }
