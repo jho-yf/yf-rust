@@ -4,18 +4,21 @@
         特别指出：第0项是0，第1项是第一个1。从第三项开始，每一项都等于前两项之和。
 */
 
+fn next_fib(num1: &mut i32, num2: &mut i32) {
+    let c = *num1 + *num2;
+    *num1 = *num2;
+    *num2 = c;
+    println!("next val is {}", num2);
+}
+
 fn fib_loop(n: u8) {
     let mut a = 1;
     let mut b = 1;
     let mut i = 2u8;
 
     loop {
-        let c = a + b;
-        a = b;
-        b = c;
+        next_fib(&mut a, &mut b);
         i += 1;
-
-        println!("next val is {}", b);
 
         if i >= n {
             break;
@@ -27,12 +30,8 @@ fn fib_while(n: u8) {
     let (mut a, mut b, mut i) = (1, 1, 2);
 
     while i < n {
-        let c = a + b;
-        a = b;
-        b = c;
+        next_fib(&mut a, &mut b);
         i += 1;
-
-        println!("next val is {}", b);
     }
 }
 
@@ -40,11 +39,7 @@ fn fib_for(n: u8) {
     let (mut a, mut b) = (1, 1);
 
     for _i in 2..n {
-        let c = a + b;
-        a = b;
-        b = c;
-
-        println!("next val is {}", b)
+        next_fib(&mut a, &mut b);
     }
 }
 
