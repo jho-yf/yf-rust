@@ -11,3 +11,4 @@ jsonxf = "1.1"                                          # json格式化
 mime = "0.3.17"                                         # 处理mime类型
 reqwest = { version = "0.12.4", features = ["json"] }   # http请求
 tokio = { version = "1.15.0", features = ["full"] }     # 异步处理库
+syntect = "5.0"

@@ -4,6 +4,10 @@ use colored::*;
 use mime::Mime;
 use reqwest::{header, Client, Response, Url};
 use std::{collections::HashMap, str::FromStr};
+use syntect::easy::HighlightLines;
+use syntect::parsing::SyntaxSet;
+use syntect::highlighting::{ThemeSet, Style};
+use syntect::util::{as_24_bit_terminal_escaped, LinesWithEndings};
 
 // 定义 HTTPie 的 CLI 的主入口，它包含若干子命令
 // 下面 /// 的注释是文档，clap 会将其作为 CLI 的帮助信息
@@ -118,7 +122,7 @@ fn print_body(m: Option<Mime>, body: &String) {
     match m {
         // 对于 application/json 响应，则将其序列化为 pretty JSON，并打印
         Some(v) if v == mime::APPLICATION_JSON => {
-            println!("{}", jsonxf::pretty_print(body).unwrap().cyan())
+            print_with_syntax(&(jsonxf::pretty_print(body).unwrap()));
         }
         // 对于其他响应，则直接打印文本
         _ => println!("{}", body),
@@ -133,6 +137,19 @@ async fn print_resp(resp: Response) -> Result<()> {
     let body = resp.text().await?;
     print_body(mime, &body);
     Ok(())
+}
+
+fn print_with_syntax(text: &String) {
+    let ps = SyntaxSet::load_defaults_newlines();
+    let ts = ThemeSet::load_defaults();
+
+    let syntax = ps.find_syntax_by_extension("rs").unwrap();
+    let mut h = HighlightLines::new(syntax, &ts.themes["base16-ocean.dark"]);
+    for line in LinesWithEndings::from(text) {
+        let ranges: Vec<(Style, &str)> = h.highlight_line(line, &ps).unwrap();
+        let escaped = as_24_bit_terminal_escaped(&ranges[..], true);
+        print!("{}", escaped);
+    }
 }
 
 #[tokio::main]
