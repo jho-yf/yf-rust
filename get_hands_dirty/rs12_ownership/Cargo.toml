@@ -1,0 +1,15 @@
+[package]
+name = "rs12_ownership"
+version = "0.1.0"
+edition = "2021"
+
+[[example]]
+name = "o1_find_pos"
+
+[[example]]
+name = "o2_sum"
+
+[[example]]
+name = "o3_is_copy"
+
+[dependencies]
