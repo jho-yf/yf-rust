@@ -1,0 +1,18 @@
+[package]
+name = "rs13_borrow"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[example]]
+name = "b01_sum"
+
+[[example]]
+name = "b02_local_ref"
+
+[[example]]
+name = "b03_push_ref"
+
+[[example]]
+name = "b04_push_local_ref"
