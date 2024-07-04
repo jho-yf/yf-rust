@@ -16,3 +16,9 @@ name = "b03_push_ref"
 
 [[example]]
 name = "b04_push_local_ref"
+
+[[example]]
+name = "b05_multi_mut_ref"
+
+[[example]]
+name = "b06_mut_ref_and_readonly_ref"
