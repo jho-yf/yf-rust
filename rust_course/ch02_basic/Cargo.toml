@@ -1,0 +1,10 @@
+[package]
+name = "ch02_basic"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[example]]
+# 变量绑定与结构
+name = "var_binding_destructing"
