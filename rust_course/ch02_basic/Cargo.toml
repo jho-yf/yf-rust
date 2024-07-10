@@ -17,3 +17,7 @@ name = "b02_data_type_num"
 [[example]]
 # 2.2.2 字符、布尔、单元类型
 name = "b03_char_bool_unit"
+
+[[example]]
+# 2.2.3 语句和表达式
+name = "b04_stmt_expr"
