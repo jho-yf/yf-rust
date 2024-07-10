@@ -13,3 +13,7 @@ name = "b01_var_binding_destructing"
 [[example]]
 # 2.2.1 数值类型
 name = "b02_data_type_num"
+
+[[example]]
+# 2.2.2 字符、布尔、单元类型
+name = "b03_char_bool_unit"
