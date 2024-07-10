@@ -25,3 +25,7 @@ name = "b04_stmt_expr"
 [[example]]
 # 2.2.4 函数
 name = "b05_fn"
+
+[[example]]
+# 2.3.1 所有权
+name = "b05_ownership"
