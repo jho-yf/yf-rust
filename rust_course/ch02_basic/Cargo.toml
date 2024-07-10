@@ -4,7 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+num = "0.4.1"
 
 [[example]]
-# 变量绑定与结构
-name = "var_binding_destructing"
+# 2.1 变量绑定与结构
+name = "b01_var_binding_destructing"
+
+[[example]]
+# 2.2.1 数值类型
+name = "b02_data_type_num"
