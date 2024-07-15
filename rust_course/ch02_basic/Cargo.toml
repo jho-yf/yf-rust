@@ -28,4 +28,4 @@ name = "b05_fn"
 
 [[example]]
 # 2.3.1 所有权
-name = "b05_ownership"
+name = "b06_ownership"
