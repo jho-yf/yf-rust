@@ -29,3 +29,11 @@ name = "b05_fn"
 [[example]]
 # 2.3.1 所有权
 name = "b06_ownership"
+
+[[example]]
+# 2.3.2 引用与借用
+name = "b07_borrowing"
+
+[[example]]
+# 2.4 复合类型
+name = "b08_composite_type"
