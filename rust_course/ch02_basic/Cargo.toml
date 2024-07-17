@@ -41,3 +41,7 @@ name = "b08_composite_type"
 [[example]]
 # 2.4.1 字符串与切片
 name = "b09_string_slice"
+
+[[example]]
+# 2.4.2 元组
+name = "b10_tuple"
