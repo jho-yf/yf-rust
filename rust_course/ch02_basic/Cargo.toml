@@ -37,3 +37,7 @@ name = "b07_borrowing"
 [[example]]
 # 2.4 复合类型
 name = "b08_composite_type"
+
+[[example]]
+# 2.4.1 字符串与切片
+name = "b09_string_slice"
