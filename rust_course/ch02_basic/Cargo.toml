@@ -49,3 +49,7 @@ name = "b10_tuple"
 [[example]]
 # 2.4.3 结构体
 name = "b11_struct"
+
+[[example]]
+# 2.4.4 枚举
+name = "b12_enum"
