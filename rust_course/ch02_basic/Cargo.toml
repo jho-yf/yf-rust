@@ -53,3 +53,7 @@ name = "b11_struct"
 [[example]]
 # 2.4.4 枚举
 name = "b12_enum"
+
+[[example]]
+# 2.4.5 数组
+name = "b13_array"
