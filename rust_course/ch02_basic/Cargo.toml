@@ -57,3 +57,7 @@ name = "b12_enum"
 [[example]]
 # 2.4.5 数组
 name = "b13_array"
+
+[[example]]
+# 2.5 流程控制
+name = "b14_flow_control"
