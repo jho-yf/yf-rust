@@ -65,3 +65,7 @@ name = "b14_flow_control"
 [[example]]
 # 2.6.1 match 和 if let
 name = "b15_match_iflet"
+
+[[example]]
+# 2.6.2 解构 Option
+name = "b16_option"
