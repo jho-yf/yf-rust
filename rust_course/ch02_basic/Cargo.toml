@@ -61,3 +61,7 @@ name = "b13_array"
 [[example]]
 # 2.5 流程控制
 name = "b14_flow_control"
+
+[[example]]
+# 2.6.1 match 和 if let
+name = "b15_match_iflet"
