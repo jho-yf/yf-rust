@@ -73,3 +73,7 @@ name = "b16_option"
 [[example]]
 # 2.6.3 模式适用场景
 name = "b17_pattern_scene"
+
+[[example]]
+# 2.6.4 全模式列表
+name = "b18_pattern_list"
