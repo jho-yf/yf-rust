@@ -81,3 +81,7 @@ name = "b18_pattern_list"
 [[example]]
 # 2.7 方法 Method
 name = "b19_method"
+
+[[example]]
+# 2.8.1 泛型
+name = "b20_generics"
