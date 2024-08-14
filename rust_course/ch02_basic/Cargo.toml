@@ -85,3 +85,15 @@ name = "b19_method"
 [[example]]
 # 2.8.1 泛型
 name = "b20_generics"
+
+[[example]]
+# 2.8.2 特征
+name = "b21_trait"
+
+[[example]]
+# 2.8.3 特征对象
+name = "b22_trait_object"
+
+[[example]]
+# 2.8.4 深入了解特征
+name = "b23_trait_deep"
