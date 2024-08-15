@@ -97,3 +97,7 @@ name = "b22_trait_object"
 [[example]]
 # 2.8.4 深入了解特征
 name = "b23_trait_deep"
+
+[[example]]
+# 2.9.1 动态数组 Vector
+name = "b24_vector"
