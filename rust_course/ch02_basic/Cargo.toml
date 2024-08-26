@@ -101,3 +101,7 @@ name = "b23_trait_deep"
 [[example]]
 # 2.9.1 动态数组 Vector
 name = "b24_vector"
+
+[[example]]
+# 2.9.2 HashMap
+name = "b25_map"
