@@ -109,3 +109,11 @@ name = "b25_map"
 [[example]]
 # 2.10 生命周期
 name = "b26_lifecycle"
+
+[[example]]
+# 2.11.1 panic!
+name = "b27_panic"
+
+[[example]]
+# 2.11.2 返回值 Result 和 ?
+name = "b28_result"
