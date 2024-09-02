@@ -1,3 +1,5 @@
+mod my_mod;
+
 fn main() {
     let a = 10;
     let b: i32 = 20;
@@ -9,7 +11,9 @@ fn main() {
     let d = 30_i32;
     let e = add(add(a, b), add(c, d));
 
-    println!("(a + b) + (c + d) = {}", e)
+    println!("(a + b) + (c + d) = {}", e);
+
+    my_mod::main();
 }
 
 fn add(i: i32, j: i32) -> i32 {
