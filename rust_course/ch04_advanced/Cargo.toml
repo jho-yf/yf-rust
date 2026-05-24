@@ -4,3 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+
+[[example]]
+# 4.1.1 深入生命周期
+name = "a01_lifetime"
+
+[[example]]
+name = "a01_closure"
